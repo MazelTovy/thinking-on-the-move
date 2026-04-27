@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>Thinking on the Move (ToM) <img src="figures/architecture/tom.svg" align="middle" alt="" height="60"></h1>
+# Thinking on the Move (ToM)
 
 ### *An LLM-Agent Framework for Modeling Urban Consumption Choices from Mobility Traces*
 
@@ -9,6 +9,10 @@
 [![HuggingFace DTBK adapter](https://img.shields.io/badge/🤗_DTBK-thinking--on--the--move--dtbk-FFD43B.svg)](https://huggingface.co/MazelTovy/thinking-on-the-move-dtbk)
 [![HuggingFace NYC adapter](https://img.shields.io/badge/🤗_NYC-thinking--on--the--move--nyc-FFD43B.svg)](https://huggingface.co/MazelTovy/thinking-on-the-move-nyc)
 [![Poster](https://img.shields.io/badge/poster-PDF-2D1B69.svg)](docs/poster.pdf)
+
+<p align="center">
+  <img src="figures/architecture/tom.svg" alt="panda" width="200">
+</p>
 
 <p>
 <b>Cities are shaped by millions of repeated micro-decisions.</b><br>
