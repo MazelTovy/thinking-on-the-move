@@ -261,7 +261,7 @@ If you use the released LoRA adapters, please also cite the base model:
 
 ## Acknowledgements
 
-We thank our advisor **Dr. Takahiro Yabe** (NYU CUSP) for sustained guidance on the framework design and ablation philosophy; PhD student **Boyang Li** and master's students **Shangyi Guo** and **DongHak Lee** for the upstream DTBK pipeline and the Tokyo POI prediction reference work this project extended.
+We thank our advisor **Dr. Takahiro Yabe** (NYU CUSP) for sustained guidance on the framework design and ablation philosophy; PhD student **Boyang Li** and **DongHak Lee**, master's student **Shangyi Guo** and for their help.
 
 Capstone sponsorship and Downtown Brooklyn data context provided by the **Downtown Brooklyn Partnership** &mdash; **Mark Landolina**, **Irawati Anand**, and **Ryan Clark**.
 
