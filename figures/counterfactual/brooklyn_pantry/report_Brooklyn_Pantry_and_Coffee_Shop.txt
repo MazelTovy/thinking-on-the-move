@@ -1,0 +1,34 @@
+======================================================================
+CLOSURE COUNTERFACTUAL: What if Brooklyn Pantry and Coffee Shop closed?
+======================================================================
+POI: Brooklyn Pantry and Coffee Shop|40.693856|-73.988042
+Original predicted share: 6.546%
+Appeared in 10983 of 60000 predictions (18.3%)
+
+--- TOP 15 SUBSTITUTES ---
+  McDonald's                                +0.3435%  orig=4.749%  dist=1392m  freq=439
+  Jasper H Kane Dining Hall                 +0.3195%  orig=4.729%  dist=130m  freq=695
+  Teranga Brooklyn                          +0.3185%  orig=6.119%  dist=534m  freq=750
+  Cammareri Bakery & Cafe                   +0.2601%  orig=3.688%  dist=1129m  freq=334
+  DGGD Coffee Shop                          +0.2545%  orig=3.162%  dist=60m  freq=313
+  Starbucks                                 +0.2367%  orig=2.908%  dist=107m  freq=250
+  Buffalo Wild Wings                        +0.1944%  orig=2.178%  dist=1343m  freq=178
+  Yossi's Cart                              +0.1785%  orig=1.779%  dist=283m  freq=250
+  Ils Wayport                               +0.1503%  orig=2.024%  dist=414m  freq=180
+  Starbucks                                 +0.1418%  orig=1.184%  dist=548m  freq=106
+  Luther Fried Chicken                      +0.1379%  orig=1.643%  dist=207m  freq=150
+  Dallas BBQ                                +0.1287%  orig=1.386%  dist=438m  freq=130
+  Chipotle Mexican Grill                    +0.1184%  orig=1.552%  dist=151m  freq=157
+  P L S Stores                              +0.1168%  orig=1.013%  dist=44m  freq=115
+  Wingstop                                  +0.1127%  orig=2.746%  dist=794m  freq=375
+
+--- PER-CLUSTER RELIANCE ---
+  C1 DTBK Local Affluent             reliance=5.063%  top sub: Wingstop(+0.616%); U Kiss(+0.615%); Teranga Brooklyn(+0.598%
+  C2 NYU Tandon Faculty/Staff        reliance=4.177%  top sub: Jasper H Kane Dining Hall(+0.500%); Lanafay(+0.453%); DGGD C
+  C3 Black Middle-Income             reliance=9.087%  top sub: Yossi's Cart(+0.677%); McDonald's(+0.630%); Ils Wayport(+0.6
+  C4 Low-Income Service Workers      reliance=1.562%  top sub: McDonald's(+0.079%); Teranga Brooklyn(+0.070%); Nevins Foodm
+  C5 White Professional Commuters    reliance=10.736%  top sub: Jasper H Kane Dining Hall(+0.706%); McDonald's(+0.703%); DGG
+  C6 Asian Tandon Workforce          reliance=5.223%  top sub: sweetgreen(+0.455%); Cesar's Gourmet Cafe(+0.452%); Juice Pr
+  C7 Mixed-Race Moderate-Income      reliance=5.136%  top sub: Buffalo Wild Wings(+0.268%); McDonald's(+0.262%); Cammareri 
+
+Weighted avg distance of substitutes: 536m

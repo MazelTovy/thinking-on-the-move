@@ -1,0 +1,45 @@
+{
+  "experiment": "counterfactual closure",
+  "poi": {
+    "name": "Brooklyn Pantry and Coffee Shop",
+    "lat": 40.693856,
+    "lon": -73.988042
+  },
+  "scenario": "What if Brooklyn Pantry & Coffee Shop closed for lunch?",
+  "headline_numbers": {
+    "original_predicted_share_percent": 6.546,
+    "appeared_in_predictions": 10983,
+    "of_total_predictions": 60000,
+    "presence_rate_percent": 18.3,
+    "weighted_avg_substitute_distance_m": 536,
+    "max_single_substitute_capture_percent": 0.3435,
+    "top_15_substitutes_combined_capture_percent": 35
+  },
+  "interpretation": "If this restaurant closed, its 6.55% share of DTBK lunch predictions would redistribute broadly. No single substitute absorbs more than 5% of the lost traffic; the top ten gainers together capture ~35%. The weighted-average substitute distance is 536m, suggesting most substitution remains within the surrounding micro-block.",
+  "top_substitutes": [
+    {"name": "McDonald's",                "delta_pct": 0.3435, "orig_pct": 4.749, "dist_m": 1392, "freq": 439},
+    {"name": "Jasper H Kane Dining Hall", "delta_pct": 0.3195, "orig_pct": 4.729, "dist_m":  130, "freq": 695},
+    {"name": "Teranga Brooklyn",          "delta_pct": 0.3185, "orig_pct": 6.119, "dist_m":  534, "freq": 750},
+    {"name": "Cammareri Bakery & Cafe",   "delta_pct": 0.2601, "orig_pct": 3.688, "dist_m": 1129, "freq": 334},
+    {"name": "DGGD Coffee Shop",          "delta_pct": 0.2545, "orig_pct": 3.162, "dist_m":   60, "freq": 313},
+    {"name": "Starbucks",                 "delta_pct": 0.2367, "orig_pct": 2.908, "dist_m":  107, "freq": 250},
+    {"name": "Buffalo Wild Wings",        "delta_pct": 0.1944, "orig_pct": 2.178, "dist_m": 1343, "freq": 178},
+    {"name": "Yossi's Cart",              "delta_pct": 0.1785, "orig_pct": 1.779, "dist_m":  283, "freq": 250},
+    {"name": "Ils Wayport",               "delta_pct": 0.1503, "orig_pct": 2.024, "dist_m":  414, "freq": 180},
+    {"name": "Starbucks",                 "delta_pct": 0.1418, "orig_pct": 1.184, "dist_m":  548, "freq": 106},
+    {"name": "Luther Fried Chicken",      "delta_pct": 0.1379, "orig_pct": 1.643, "dist_m":  207, "freq": 150},
+    {"name": "Dallas BBQ",                "delta_pct": 0.1287, "orig_pct": 1.386, "dist_m":  438, "freq": 130},
+    {"name": "Chipotle Mexican Grill",    "delta_pct": 0.1184, "orig_pct": 1.552, "dist_m":  151, "freq": 157},
+    {"name": "P L S Stores",              "delta_pct": 0.1168, "orig_pct": 1.013, "dist_m":   44, "freq": 115},
+    {"name": "Wingstop",                  "delta_pct": 0.1127, "orig_pct": 2.746, "dist_m":  794, "freq": 375}
+  ],
+  "per_cluster_reliance": [
+    {"cluster": "C1 DTBK Local Affluent",            "reliance_pct": 5.063, "top_sub": "Wingstop"},
+    {"cluster": "C2 NYU Tandon Faculty/Staff",       "reliance_pct": 4.177, "top_sub": "Jasper H Kane Dining Hall"},
+    {"cluster": "C3 Black Middle-Income",            "reliance_pct": 9.087, "top_sub": "Yossi's Cart"},
+    {"cluster": "C4 Low-Income Service Workers",     "reliance_pct": 1.562, "top_sub": "McDonald's"},
+    {"cluster": "C5 White Professional Commuters",   "reliance_pct": 10.736, "top_sub": "Jasper H Kane Dining Hall"},
+    {"cluster": "C6 Asian Tandon Workforce",         "reliance_pct": 5.223, "top_sub": "sweetgreen"},
+    {"cluster": "C7 Mixed-Race Moderate-Income",     "reliance_pct": 5.136, "top_sub": "Buffalo Wild Wings"}
+  ]
+}

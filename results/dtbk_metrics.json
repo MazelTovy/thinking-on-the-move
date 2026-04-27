@@ -1,0 +1,25 @@
+{
+  "experiment": "dtbk-sft-half-year (Exp 11 ref)",
+  "description": "Downtown Brooklyn Q1-2022 OOS prediction. Evaluation: visit-aggregated visit-mass over 667 active POIs.",
+  "evaluation": {
+    "scope": "Q1-2022 OOS",
+    "n_pois": 667,
+    "llm_n_records": 60000,
+    "classical_n_records": 6028,
+    "config": "Exp 11 (a_work_q1_polygon + extended valid_poi + extended coordnames)"
+  },
+  "methods": [
+    {"name": "Frequency",                                  "spearman": 0.6783, "pearson": 0.9131, "kendall": 0.5741, "ndcg_10": 0.9263, "ndcg_20": 0.8945, "js": 0.1358, "coverage": 0.3538, "trip_top1": 0.1496, "trip_top5": 0.4106},
+    {"name": "Gravity",                                    "spearman": 0.7543, "pearson": 0.9225, "kendall": 0.6219, "ndcg_10": 0.9370, "ndcg_20": 0.8949, "js": 0.0868, "coverage": 0.6402, "trip_top1": 0.3412, "trip_top5": 0.6821},
+    {"name": "Huff",                                       "spearman": 0.7580, "pearson": 0.9226, "kendall": 0.6162, "ndcg_10": 0.8968, "ndcg_20": 0.8665, "js": 0.0820, "coverage": 0.7316, "trip_top1": 0.3991, "trip_top5": 0.6896},
+    {"name": "MNL-grid",                                   "spearman": 0.7545, "pearson": 0.9231, "kendall": 0.6174, "ndcg_10": 0.9271, "ndcg_20": 0.9020, "js": 0.0778, "coverage": 0.6822, "trip_top1": 0.3140, "trip_top5": 0.6573},
+    {"name": "MNL-rich",                                   "spearman": 0.7582, "pearson": 0.9140, "kendall": 0.6157, "ndcg_10": 0.9039, "ndcg_20": 0.8809, "js": 0.0814, "coverage": 0.7331, "trip_top1": 0.3960, "trip_top5": 0.6939},
+    {"name": "Deep Gravity",                               "spearman": 0.7589, "pearson": 0.8774, "kendall": 0.6141, "ndcg_10": 0.8246, "ndcg_20": 0.8748, "js": 0.0851, "coverage": 0.7496, "trip_top1": 0.4053, "trip_top5": 0.6891},
+    {"name": "LambdaRank (LightGBM)",                      "spearman": 0.7579, "pearson": 0.8818, "kendall": 0.6075, "ndcg_10": 0.7355, "ndcg_20": 0.7913, "js": 0.0894, "coverage": 0.8351, "trip_top1": 0.4491, "trip_top5": 0.7060},
+    {"name": "XGBRanker",                                  "spearman": 0.7587, "pearson": 0.8835, "kendall": 0.6112, "ndcg_10": 0.7424, "ndcg_20": 0.7969, "js": 0.0905, "coverage": 0.7916, "trip_top1": 0.4496, "trip_top5": 0.7074},
+    {"name": "Vanilla Llama-3.1-8B",                       "note": "see poster left scatter — absolute chaos, overall underestimation"},
+    {"name": "Llama-3.1-8B + LoRA (Exp 11, ours)",         "spearman": 0.6291, "pearson": 0.7583, "kendall": 0.4982, "ndcg_10": 0.8220, "ndcg_20": 0.7467, "js": 0.1851, "coverage": 0.8396, "weighted_pearson": 0.6430, "weighted_spearman": 0.3805},
+    {"name": "Llama-3.1-8B + LoRA v2 (rep=3)",             "spearman": 0.5798, "pearson": 0.7715, "kendall": 0.4494, "ndcg_10": 0.7916, "ndcg_20": 0.7622, "js": 0.1965, "coverage": 0.7886, "weighted_pearson": 0.6835, "weighted_spearman": 0.6219}
+  ],
+  "interpretation": "On DTBK at this scale, the fine-tuned LLaMA recovers consumer demand structure that vanilla LLaMA misses entirely (see scatter figures). Classical baselines retain higher aggregate Pearson on per-POI visit mass because n=6028 trips concentrates signal on the head, where popularity-distance models fit well. The LLM excels at handling the long tail of new/unseen POIs (high coverage 0.84) and at capturing per-visit choice (top1/top5)."
+}

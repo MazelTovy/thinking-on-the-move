@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 560" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <!-- Palette: deep purple #2D1B69, accent yellow #FFD43B, ink #1A1A1A, mist #F4F1F8 -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBFAFE"/>
+      <stop offset="100%" stop-color="#F4F1F8"/>
+    </linearGradient>
+    <linearGradient id="evidenceGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8F5E9"/>
+      <stop offset="100%" stop-color="#C8E6C9"/>
+    </linearGradient>
+    <linearGradient id="modelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EDE7F6"/>
+      <stop offset="100%" stop-color="#D1C4E9"/>
+    </linearGradient>
+    <linearGradient id="resultGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF8E1"/>
+      <stop offset="100%" stop-color="#FFECB3"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2D1B69"/>
+    </marker>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.18"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="560" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="640" y="42" text-anchor="middle" font-size="22" font-weight="700" fill="#2D1B69">
+    Thinking on the Move &#8212; an LLM-Agent Framework for Urban Consumption Choices
+  </text>
+  <text x="640" y="64" text-anchor="middle" font-size="13" fill="#5E5675">
+    Mobility traces &#8594; choice sets &#8594; LoRA-adapted LLM &#8594; demand predictions
+  </text>
+
+  <!-- ===== Layer 1: Urban Evidence ===== -->
+  <g filter="url(#cardShadow)">
+    <rect x="40" y="100" width="280" height="380" rx="14" fill="url(#evidenceGrad)" stroke="#1B5E20" stroke-width="1.2"/>
+    <text x="180" y="128" text-anchor="middle" font-size="14" font-weight="700" fill="#1B5E20">Urban Evidence Layer</text>
+    <line x1="60" y1="138" x2="300" y2="138" stroke="#1B5E20" stroke-opacity="0.3" stroke-width="1"/>
+    <!-- Cuebiq -->
+    <g transform="translate(60,158)">
+      <rect width="240" height="90" rx="8" fill="#FFFFFF" stroke="#1B5E20" stroke-opacity="0.4"/>
+      <text x="14" y="22" font-size="13" font-weight="600" fill="#1B5E20">Cuebiq trajectories</text>
+      <text x="14" y="42" font-size="11" fill="#3C3C3C">de-identified GPS pings</text>
+      <text x="14" y="58" font-size="11" fill="#3C3C3C">home / work CBG inferred</text>
+      <text x="14" y="74" font-size="11" fill="#3C3C3C">stop detection &#8594; visits</text>
+    </g>
+    <!-- Safegraph -->
+    <g transform="translate(60,260)">
+      <rect width="240" height="90" rx="8" fill="#FFFFFF" stroke="#1B5E20" stroke-opacity="0.4"/>
+      <text x="14" y="22" font-size="13" font-weight="600" fill="#1B5E20">SafeGraph POIs</text>
+      <text x="14" y="42" font-size="11" fill="#3C3C3C">name + category + opening hours</text>
+      <text x="14" y="58" font-size="11" fill="#3C3C3C">building polygons</text>
+      <text x="14" y="74" font-size="11" fill="#3C3C3C">weekly POI snapshots 2021&#8211;22</text>
+    </g>
+    <!-- ACS -->
+    <g transform="translate(60,362)">
+      <rect width="240" height="100" rx="8" fill="#FFFFFF" stroke="#1B5E20" stroke-opacity="0.4"/>
+      <text x="14" y="22" font-size="13" font-weight="600" fill="#1B5E20">Demographics (ACS)</text>
+      <text x="14" y="42" font-size="11" fill="#3C3C3C">income &#8226; race &#8226; education</text>
+      <text x="14" y="58" font-size="11" fill="#3C3C3C">at CBG resolution</text>
+      <text x="14" y="78" font-size="11" font-style="italic" fill="#5E5675">&#8594; 7-cluster KMeans (DTBK)</text>
+    </g>
+  </g>
+
+  <!-- arrow E -> M -->
+  <line x1="320" y1="290" x2="370" y2="290" stroke="#2D1B69" stroke-width="2.4" marker-end="url(#arrow)"/>
+
+  <!-- ===== Layer 2: ToM Modeling ===== -->
+  <g filter="url(#cardShadow)">
+    <rect x="380" y="100" width="500" height="380" rx="14" fill="url(#modelGrad)" stroke="#311B92" stroke-width="1.2"/>
+    <text x="630" y="128" text-anchor="middle" font-size="14" font-weight="700" fill="#311B92">ToM Modeling Layer</text>
+    <line x1="400" y1="138" x2="860" y2="138" stroke="#311B92" stroke-opacity="0.3"/>
+
+    <!-- Choice Set Engine -->
+    <g transform="translate(400,158)">
+      <rect width="220" height="304" rx="10" fill="#FFFFFF" stroke="#311B92" stroke-opacity="0.45"/>
+      <text x="14" y="22" font-size="13" font-weight="700" fill="#311B92">1. Choice Set Engine</text>
+      <line x1="14" y1="32" x2="206" y2="32" stroke="#311B92" stroke-opacity="0.2"/>
+      <g font-size="11.5" fill="#1A1A1A">
+        <circle cx="22" cy="56" r="4" fill="#FFD43B" stroke="#311B92" stroke-width="0.5"/>
+        <text x="34" y="60">POI matching</text>
+        <text x="34" y="76" font-size="10" fill="#5E5675">name &#8594; canonical ID</text>
+
+        <circle cx="22" cy="98" r="4" fill="#FFD43B" stroke="#311B92" stroke-width="0.5"/>
+        <text x="34" y="102">Temporal snapshot</text>
+        <text x="34" y="118" font-size="10" fill="#5E5675">active POIs at visit week</text>
+
+        <circle cx="22" cy="140" r="4" fill="#FFD43B" stroke="#311B92" stroke-width="0.5"/>
+        <text x="34" y="144">Candidate sampling</text>
+        <text x="34" y="160" font-size="10" fill="#5E5675">k=30; freq &#215; distance</text>
+
+        <circle cx="22" cy="182" r="4" fill="#FFD43B" stroke="#311B92" stroke-width="0.5"/>
+        <text x="34" y="186">Origin anchor</text>
+        <text x="34" y="202" font-size="10" fill="#5E5675">work-CBG centroid</text>
+
+        <circle cx="22" cy="224" r="4" fill="#FFD43B" stroke="#311B92" stroke-width="0.5"/>
+        <text x="34" y="228">Demographic context</text>
+        <text x="34" y="244" font-size="10" fill="#5E5675">cluster persona injection</text>
+
+        <circle cx="22" cy="266" r="4" fill="#FFD43B" stroke="#311B92" stroke-width="0.5"/>
+        <text x="34" y="270">Polygon policy</text>
+        <text x="34" y="286" font-size="10" fill="#5E5675">exclude shared building</text>
+      </g>
+    </g>
+
+    <!-- Choice Model -->
+    <g transform="translate(640,158)">
+      <rect width="220" height="304" rx="10" fill="#FFFFFF" stroke="#311B92" stroke-opacity="0.45"/>
+      <text x="14" y="22" font-size="13" font-weight="700" fill="#311B92">2. ToM Choice Model</text>
+      <line x1="14" y1="32" x2="206" y2="32" stroke="#311B92" stroke-opacity="0.2"/>
+
+      <text x="14" y="56" font-size="11.5" font-weight="600" fill="#1A1A1A">Prompt</text>
+      <rect x="14" y="62" width="192" height="76" rx="6" fill="#F4F1F8" stroke="#311B92" stroke-opacity="0.3"/>
+      <text x="22" y="80" font-size="10" fill="#3C3C3C">--- AGENT PERSONA ---</text>
+      <text x="22" y="94" font-size="10" fill="#3C3C3C">--- CANDIDATE RESTAURANTS ---</text>
+      <text x="22" y="108" font-size="10" fill="#3C3C3C">--- TASK ---</text>
+      <text x="22" y="122" font-size="10" fill="#3C3C3C">predict next visit + top-5</text>
+
+      <text x="14" y="160" font-size="11.5" font-weight="600" fill="#1A1A1A">Llama-3.1-8B + LoRA</text>
+      <rect x="14" y="166" width="192" height="48" rx="6" fill="#FFD43B" fill-opacity="0.18" stroke="#FFD43B" stroke-opacity="0.85"/>
+      <text x="22" y="184" font-size="11" fill="#1A1A1A">r=16 &#8226; &#945;=32 &#8226; PEFT</text>
+      <text x="22" y="200" font-size="11" fill="#1A1A1A">~80M trainable params</text>
+
+      <text x="14" y="234" font-size="11.5" font-weight="600" fill="#1A1A1A">Inference</text>
+      <rect x="14" y="240" width="192" height="48" rx="6" fill="#F4F1F8" stroke="#311B92" stroke-opacity="0.3"/>
+      <text x="22" y="258" font-size="11" fill="#3C3C3C">vLLM batch (h200)</text>
+      <text x="22" y="274" font-size="11" fill="#3C3C3C">JSON-constrained output</text>
+    </g>
+  </g>
+
+  <!-- arrow M -> R -->
+  <line x1="880" y1="290" x2="930" y2="290" stroke="#2D1B69" stroke-width="2.4" marker-end="url(#arrow)"/>
+
+  <!-- ===== Layer 3: Outputs ===== -->
+  <g filter="url(#cardShadow)">
+    <rect x="940" y="100" width="300" height="380" rx="14" fill="url(#resultGrad)" stroke="#F57F17" stroke-width="1.2"/>
+    <text x="1090" y="128" text-anchor="middle" font-size="14" font-weight="700" fill="#E65100">Predictions &amp; Diagnostics</text>
+    <line x1="960" y1="138" x2="1220" y2="138" stroke="#F57F17" stroke-opacity="0.4"/>
+
+    <g transform="translate(960,158)">
+      <rect width="260" height="60" rx="8" fill="#FFFFFF" stroke="#F57F17" stroke-opacity="0.45"/>
+      <text x="14" y="22" font-size="12.5" font-weight="600" fill="#E65100">Per-visit choice</text>
+      <text x="14" y="40" font-size="11" fill="#3C3C3C">next_choice + ranked top-5</text>
+      <text x="14" y="54" font-size="10" fill="#5E5675">JSON; visit-level</text>
+    </g>
+    <g transform="translate(960,228)">
+      <rect width="260" height="60" rx="8" fill="#FFFFFF" stroke="#F57F17" stroke-opacity="0.45"/>
+      <text x="14" y="22" font-size="12.5" font-weight="600" fill="#E65100">POI demand surface</text>
+      <text x="14" y="40" font-size="11" fill="#3C3C3C">aggregated visit mass per POI</text>
+      <text x="14" y="54" font-size="10" fill="#5E5675">3D residual map; spatial hexbin</text>
+    </g>
+    <g transform="translate(960,298)">
+      <rect width="260" height="60" rx="8" fill="#FFFFFF" stroke="#F57F17" stroke-opacity="0.45"/>
+      <text x="14" y="22" font-size="12.5" font-weight="600" fill="#E65100">Counterfactual</text>
+      <text x="14" y="40" font-size="11" fill="#3C3C3C">close a POI &#8594; substitution map</text>
+      <text x="14" y="54" font-size="10" fill="#5E5675">cluster-level redistribution</text>
+    </g>
+    <g transform="translate(960,368)">
+      <rect width="260" height="92" rx="8" fill="#2D1B69"/>
+      <text x="14" y="24" font-size="12.5" font-weight="700" fill="#FFD43B">Headline NYC OOS 2022</text>
+      <text x="14" y="46" font-size="11.5" fill="#FFFFFF">Top-1: <tspan font-weight="700">0.7447</tspan> &#8226; Top-5: <tspan font-weight="700">0.8031</tspan></text>
+      <text x="14" y="64" font-size="11.5" fill="#FFFFFF">vs LightGBM Top-1 0.7300 (+1.5pp)</text>
+      <text x="14" y="82" font-size="10" fill="#FFD43B">500k visits &#8226; 30 candidates each</text>
+    </g>
+  </g>
+</svg>

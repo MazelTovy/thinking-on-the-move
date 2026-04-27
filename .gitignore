@@ -1,0 +1,71 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environments
+.venv/
+venv/
+env/
+.env
+.envrc
+.python-version
+
+# Distribution
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Editor
+.idea/
+.vscode/
+.cursor/
+*.swp
+*.swo
+.DS_Store
+
+# Cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs / temp
+*.log
+*.tmp
+tmp/
+logs/
+
+# Data — never commit raw mobility/POI data (privacy)
+data/raw/
+data/cuebiq/
+data/safegraph/
+data/processed/
+*.parquet
+*.csv.gz
+
+# Large prediction artifacts (reproducible from code)
+results/predictions/*.jsonl
+*.safetensors
+*.pt
+*.bin
+*.gguf
+
+# Maps that exceed GitHub's 50 MB soft warn
+figures/**/*.html
+figures/**/*_full.png
+
+# OS
+Thumbs.db
+
+# Keep small synthetic toy data + cached metric JSONs + figure SVGs/PNGs
+!data/synthetic/**
+!results/*.json
+!figures/**/*.svg
+!figures/**/*.png

@@ -1,0 +1,30 @@
+{
+  "experiment": "exp02_wcbg",
+  "description": "NYC Metro 2022 OOS visit-level prediction. Origin = work-CBG centroid; polygon-policy = exclude shared building. 500k sampled visits.",
+  "evaluation": {
+    "scope": "OOS 2022",
+    "n_visits_sampled": 500000,
+    "candidate_set_size_k": 30,
+    "primary_radius_m": 1500,
+    "fallback_radius_m": 3000,
+    "hard_cap_radius_m": 5000
+  },
+  "methods": [
+    {"name": "Frequency prior",                 "top_1": 0.2034, "top_5": 0.4572, "spearman": 0.5612, "ndcg_10": 0.5100, "ndcg_50": 0.5919, "js": 0.1970},
+    {"name": "Gravity",                         "top_1": 0.2025, "top_5": 0.4522, "spearman": 0.5599, "ndcg_10": 0.5100, "ndcg_50": 0.5919, "js": 0.1970},
+    {"name": "Huff / MCI",                      "top_1": 0.2034, "top_5": 0.4572, "spearman": 0.5590, "ndcg_10": 0.4838, "ndcg_50": 0.5657, "js": 0.1944},
+    {"name": "MNL-grid",                        "top_1": 0.2034, "top_5": 0.4572, "spearman": 0.5590, "ndcg_10": 0.4838, "ndcg_50": 0.5657, "js": 0.1944},
+    {"name": "MNL-rich (conditional logit)",    "top_1": 0.6495, "top_5": 0.7603, "spearman": 0.7620, "ndcg_10": 0.7917, "ndcg_50": 0.8451, "js": 0.0623},
+    {"name": "Deep Gravity (lite MLP)",         "top_1": 0.7237, "top_5": 0.7986, "spearman": 0.8013, "ndcg_10": 0.8183, "ndcg_50": 0.8746, "js": 0.0488},
+    {"name": "LambdaRank (LightGBM)",           "top_1": 0.7300, "top_5": 0.8017, "spearman": 0.8029, "ndcg_10": 0.9527, "ndcg_50": 0.9561, "js": 0.0478},
+    {"name": "XGBRanker (rank:ndcg)",           "top_1": 0.7282, "top_5": 0.8025, "spearman": 0.8012, "ndcg_10": 0.9173, "ndcg_50": 0.9121, "js": 0.0491},
+    {"name": "LoRA-Llama-3.1-8B (ours)",        "top_1": 0.7447, "top_5": 0.8031, "spearman": 0.5935, "ndcg_10": 0.5109, "ndcg_50": 0.6112, "js": 0.1967}
+  ],
+  "best_top1": "LoRA-Llama-3.1-8B (ours)",
+  "best_top5": "LoRA-Llama-3.1-8B (ours)",
+  "best_spearman": "LambdaRank (LightGBM)",
+  "best_ndcg_10": "LambdaRank (LightGBM)",
+  "best_ndcg_50": "LambdaRank (LightGBM)",
+  "best_js": "LambdaRank (LightGBM)",
+  "interpretation": "LLM exceeds the strongest classical ranker by +1.47pp on Top-1 and +0.14pp on Top-5, but scores lower on aggregate ranking metrics. The four popularity/distance-only baselines (Frequency, Gravity, Huff, MNL-grid) collapse to popularity because the distance-aware candidate sampler has already removed most distance signal."
+}

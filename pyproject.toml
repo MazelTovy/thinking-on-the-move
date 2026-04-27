@@ -1,0 +1,77 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thinking-on-the-move"
+version = "0.1.0"
+description = "An LLM-Agent Framework for Modeling Urban Consumption Choices from Mobility Traces"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Sizhe (Alex) Xu", email = "sx2490@nyu.edu" },
+  { name = "Divya Natekar", email = "dyn2009@nyu.edu" },
+]
+requires-python = ">=3.10"
+keywords = ["llm", "lora", "urban-science", "mobility", "spatial-choice", "discrete-choice"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: GIS",
+]
+
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "scikit-learn>=1.3",
+  "scipy>=1.11",
+  "matplotlib>=3.7",
+  "geopandas>=0.14",
+  "shapely>=2.0",
+  "tqdm>=4.65",
+]
+
+[project.optional-dependencies]
+train = [
+  "torch>=2.1",
+  "transformers>=4.40",
+  "peft>=0.10",
+  "accelerate>=0.27",
+  "bitsandbytes>=0.43",
+  "datasets>=2.16",
+]
+infer = [
+  "vllm>=0.5",
+  "torch>=2.1",
+]
+baselines = [
+  "lightgbm>=4.0",
+  "xgboost>=2.0",
+]
+viz = [
+  "seaborn>=0.13",
+  "contextily>=1.5",
+  "plotly>=5.18",
+]
+notebooks = [
+  "jupyter",
+  "ipywidgets",
+]
+all = [
+  "thinking-on-the-move[train,infer,baselines,viz,notebooks]",
+]
+
+[project.urls]
+Homepage = "https://github.com/MazelTovy/thinking-on-the-move"
+Poster = "https://github.com/MazelTovy/thinking-on-the-move/blob/main/docs/poster.pdf"
+"DTBK adapter" = "https://huggingface.co/MazelTovy/thinking-on-the-move-dtbk"
+"NYC adapter" = "https://huggingface.co/MazelTovy/thinking-on-the-move-nyc"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"

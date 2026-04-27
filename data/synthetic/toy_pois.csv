@@ -1,0 +1,81 @@
+poi_id,poi_name,poi_lat,poi_lon,sub_category,cluster_freq,polygon_type
+Brooklyn Bagel|40.696510|-74.004250,Brooklyn Bagel,40.69651,-74.00425,cafe,7,POINT
+Roebling Tea|40.698256|-73.984699,Roebling Tea,40.698256,-73.984699,deli,10,POINT
+Court St Coffee|40.688935|-73.989839,Court St Coffee,40.688935,-73.989839,pizza,21,POINT
+Pine Box Sandwich|40.688968|-73.987322,Pine Box Sandwich,40.688968,-73.987322,asian,69,POINT
+Williamsburg Pizza|40.691125|-74.000336,Williamsburg Pizza,40.691125,-74.000336,burger,39,POINT
+Park Slope Pies|40.686669|-74.002099,Park Slope Pies,40.686669,-74.002099,salad,54,POINT
+Smith St Wok|40.699528|-73.983108,Smith St Wok,40.699528,-73.983108,bbq,122,POINT
+Carroll Garden Sushi|40.691814|-73.988439,Carroll Garden Sushi,40.691814,-73.988439,bakery,53,POINT
+Atlantic Burgers|40.700511|-73.987679,Atlantic Burgers,40.700511,-73.987679,cafe,17,POINT
+Henry St Grill|40.689102|-73.996318,Henry St Grill,40.689102,-73.996318,deli,4,POINT
+Boerum Salad Bar|40.686818|-73.996661,Boerum Salad Bar,40.686818,-73.996661,pizza,17,POINT
+Cobble Greens|40.691663|-73.998715,Cobble Greens,40.691663,-73.998715,asian,23,POINT
+Red Hook BBQ|40.688080|-73.983126,Red Hook BBQ,40.68808,-73.983126,burger,4,POINT
+Gowanus Smoke|40.702811|-73.985800,Gowanus Smoke,40.702811,-73.9858,salad,16,POINT
+Greenpoint Bakery|40.700171|-73.981720,Greenpoint Bakery,40.700171,-73.98172,bbq,7,POINT
+Flatbush Pastry|40.688798|-73.976713,Flatbush Pastry,40.688798,-73.976713,bakery,31,POINT
+Tandon Cafe|40.696798|-73.993131,Tandon Cafe,40.696798,-73.993131,cafe,45,POINT
+Jasper H Kane Hall|40.689768|-73.997601,Jasper H Kane Hall,40.689768,-73.997601,deli,14,POINT
+Dock St Coffee|40.695523|-73.978065,Dock St Coffee,40.695523,-73.978065,pizza,9,POINT
+Cesar's Gourmet|40.702956|-73.989714,Cesar's Gourmet,40.702956,-73.989714,asian,2,POINT
+Brooklyn Bagel #2|40.699257|-73.992335,Brooklyn Bagel #2,40.699257,-73.992335,burger,3,POINT
+Roebling Tea #2|40.702930|-73.989127,Roebling Tea #2,40.70293,-73.989127,salad,23,POINT
+Court St Coffee #2|40.689803|-73.985771,Court St Coffee #2,40.689803,-73.985771,bbq,3,POINT
+Pine Box Sandwich #2|40.693167|-73.976386,Pine Box Sandwich #2,40.693167,-73.976386,bakery,29,POINT
+Williamsburg Pizza #2|40.694011|-73.999640,Williamsburg Pizza #2,40.694011,-73.99964,cafe,4,POINT
+Park Slope Pies #2|40.695961|-74.000415,Park Slope Pies #2,40.695961,-74.000415,deli,32,POINT
+Smith St Wok #2|40.699015|-73.989089,Smith St Wok #2,40.699015,-73.989089,pizza,8,POINT
+Carroll Garden Sushi #2|40.700804|-73.976592,Carroll Garden Sushi #2,40.700804,-73.976592,asian,3,POINT
+Atlantic Burgers #2|40.686246|-73.982182,Atlantic Burgers #2,40.686246,-73.982182,burger,20,POINT
+Henry St Grill #2|40.693555|-73.988506,Henry St Grill #2,40.693555,-73.988506,salad,10,POINT
+Boerum Salad Bar #2|40.694707|-73.983102,Boerum Salad Bar #2,40.694707,-73.983102,bbq,5,POINT
+Cobble Greens #2|40.702913|-73.985504,Cobble Greens #2,40.702913,-73.985504,bakery,9,POINT
+Red Hook BBQ #2|40.687178|-73.998259,Red Hook BBQ #2,40.687178,-73.998259,cafe,6,POINT
+Gowanus Smoke #2|40.689142|-73.998393,Gowanus Smoke #2,40.689142,-73.998393,deli,1,POINT
+Greenpoint Bakery #2|40.689121|-73.977837,Greenpoint Bakery #2,40.689121,-73.977837,pizza,3,POINT
+Flatbush Pastry #2|40.688856|-74.001031,Flatbush Pastry #2,40.688856,-74.001031,asian,69,POINT
+Tandon Cafe #2|40.693508|-73.981461,Tandon Cafe #2,40.693508,-73.981461,burger,23,POINT
+Jasper H Kane Hall #2|40.686745|-73.992068,Jasper H Kane Hall #2,40.686745,-73.992068,salad,9,POINT
+Dock St Coffee #2|40.698123|-73.984799,Dock St Coffee #2,40.698123,-73.984799,bbq,9,POINT
+Cesar's Gourmet #2|40.700510|-73.997540,Cesar's Gourmet #2,40.70051,-73.99754,bakery,4,POINT
+Brooklyn Bagel #3|40.692594|-73.996644,Brooklyn Bagel #3,40.692594,-73.996644,cafe,6,POINT
+Roebling Tea #3|40.694906|-74.003482,Roebling Tea #3,40.694906,-74.003482,deli,24,POINT
+Court St Coffee #3|40.693742|-73.998588,Court St Coffee #3,40.693742,-73.998588,pizza,10,POINT
+Pine Box Sandwich #3|40.691822|-73.975441,Pine Box Sandwich #3,40.691822,-73.975441,asian,1,POINT
+Williamsburg Pizza #3|40.693190|-73.992310,Williamsburg Pizza #3,40.69319,-73.99231,burger,17,POINT
+Park Slope Pies #3|40.687786|-73.996099,Park Slope Pies #3,40.687786,-73.996099,salad,16,POINT
+Smith St Wok #3|40.686029|-73.987475,Smith St Wok #3,40.686029,-73.987475,bbq,12,POINT
+Carroll Garden Sushi #3|40.687834|-73.976177,Carroll Garden Sushi #3,40.687834,-73.976177,bakery,5,POINT
+Atlantic Burgers #3|40.695711|-73.984744,Atlantic Burgers #3,40.695711,-73.984744,cafe,7,POINT
+Henry St Grill #3|40.701025|-73.997614,Henry St Grill #3,40.701025,-73.997614,deli,18,POINT
+Boerum Salad Bar #3|40.692546|-73.987490,Boerum Salad Bar #3,40.692546,-73.98749,pizza,22,POINT
+Cobble Greens #3|40.688677|-73.983514,Cobble Greens #3,40.688677,-73.983514,asian,5,POINT
+Red Hook BBQ #3|40.697090|-73.996000,Red Hook BBQ #3,40.69709,-73.996,burger,3,POINT
+Gowanus Smoke #3|40.686306|-73.991251,Gowanus Smoke #3,40.686306,-73.991251,salad,4,POINT
+Greenpoint Bakery #3|40.689774|-73.977002,Greenpoint Bakery #3,40.689774,-73.977002,bbq,9,POINT
+Flatbush Pastry #3|40.700007|-73.983894,Flatbush Pastry #3,40.700007,-73.983894,bakery,26,POINT
+Tandon Cafe #3|40.696941|-73.976832,Tandon Cafe #3,40.696941,-73.976832,cafe,2,POINT
+Jasper H Kane Hall #3|40.689902|-73.986855,Jasper H Kane Hall #3,40.689902,-73.986855,deli,19,POINT
+Dock St Coffee #3|40.696416|-73.997080,Dock St Coffee #3,40.696416,-73.99708,pizza,9,POINT
+Cesar's Gourmet #3|40.700230|-74.002231,Cesar's Gourmet #3,40.70023,-74.002231,asian,10,POINT
+Brooklyn Bagel #4|40.685064|-73.981866,Brooklyn Bagel #4,40.685064,-73.981866,burger,16,POINT
+Roebling Tea #4|40.698342|-73.988450,Roebling Tea #4,40.698342,-73.98845,salad,10,POINT
+Court St Coffee #4|40.686354|-73.978507,Court St Coffee #4,40.686354,-73.978507,bbq,55,POINT
+Pine Box Sandwich #4|40.700023|-73.987525,Pine Box Sandwich #4,40.700023,-73.987525,bakery,6,POINT
+Williamsburg Pizza #4|40.690549|-73.978031,Williamsburg Pizza #4,40.690549,-73.978031,cafe,28,POINT
+Park Slope Pies #4|40.689492|-74.001916,Park Slope Pies #4,40.689492,-74.001916,deli,7,POINT
+Smith St Wok #4|40.687782|-73.977104,Smith St Wok #4,40.687782,-73.977104,pizza,25,POINT
+Carroll Garden Sushi #4|40.699173|-74.001757,Carroll Garden Sushi #4,40.699173,-74.001757,asian,1,POINT
+Atlantic Burgers #4|40.693285|-73.995844,Atlantic Burgers #4,40.693285,-73.995844,burger,23,POINT
+Henry St Grill #4|40.685426|-73.999206,Henry St Grill #4,40.685426,-73.999206,salad,1,POINT
+Boerum Salad Bar #4|40.702404|-73.996626,Boerum Salad Bar #4,40.702404,-73.996626,bbq,18,POINT
+Cobble Greens #4|40.702661|-73.988914,Cobble Greens #4,40.702661,-73.988914,bakery,35,POINT
+Red Hook BBQ #4|40.686951|-73.991963,Red Hook BBQ #4,40.686951,-73.991963,cafe,21,POINT
+Gowanus Smoke #4|40.695912|-73.989657,Gowanus Smoke #4,40.695912,-73.989657,deli,7,POINT
+Greenpoint Bakery #4|40.689585|-73.983736,Greenpoint Bakery #4,40.689585,-73.983736,pizza,15,POINT
+Flatbush Pastry #4|40.698355|-73.984881,Flatbush Pastry #4,40.698355,-73.984881,asian,9,POINT
+Tandon Cafe #4|40.696956|-73.995094,Tandon Cafe #4,40.696956,-73.995094,burger,1,POINT
+Jasper H Kane Hall #4|40.697956|-73.995990,Jasper H Kane Hall #4,40.697956,-73.99599,salad,7,POINT
+Dock St Coffee #4|40.692243|-73.996130,Dock St Coffee #4,40.692243,-73.99613,bbq,4,POINT
+Cesar's Gourmet #4|40.701927|-73.984680,Cesar's Gourmet #4,40.701927,-73.98468,bakery,73,POINT
