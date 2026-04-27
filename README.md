@@ -238,9 +238,9 @@ thinking-on-the-move/
 @unpublished{xu2026tom,
   title  = {Thinking on the Move: An LLM-Agent Framework for Modeling
             Urban Consumption Choices from Mobility Traces},
-  author = {Xu, Sizhe (Alex) and Natekar, Divya},
+  author = {Xu, Sizhe},
   year   = {2026},
-  note   = {NYU Center for Urban Science and Progress, Capstone Project P38;
+  note   = {NYU Center for Urban Science and Progress, Capstone Project;
             in collaboration with the Downtown Brooklyn Partnership.}
 }
 ```
