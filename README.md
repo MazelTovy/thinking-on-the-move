@@ -11,7 +11,7 @@
 [![Poster](https://img.shields.io/badge/poster-PDF-2D1B69.svg)](docs/poster.pdf)
 
 <p align="center">
-  <img src="figures/architecture/tom.svg" alt="panda" width="200">
+  <img src="figures/architecture/tom.svg" alt="panda" width="100">
 </p>
 
 <p>
