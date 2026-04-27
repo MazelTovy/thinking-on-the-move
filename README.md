@@ -16,7 +16,7 @@ We turn anonymous mobility traces into <i>interpretable</i> models of where peop
 and show that a <b>fine-tuned Llama-3.1-8B</b> beats every classical spatial-choice baseline on <b>Top-1</b> and <b>Top-5</b> accuracy.
 </p>
 
-<img src="figures/architecture/architecture.svg" alt="ToM architecture" width="100%">
+<a href="docs/poster.pdf"><img src="docs/poster.png" alt="ToM project poster (click for PDF)" width="100%"></a>
 
 </div>
 
