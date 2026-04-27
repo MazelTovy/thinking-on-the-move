@@ -1,6 +1,6 @@
 <div align="center">
 
-# Thinking on the Move
+<h1>Thinking on the Move (ToM) <img src="figures/architecture/architecture.svg" alt="" height="40"></h1>
 
 ### *An LLM-Agent Framework for Modeling Urban Consumption Choices from Mobility Traces*
 
